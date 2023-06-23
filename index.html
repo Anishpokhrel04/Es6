@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="1">click me</button>
+  <p id="msg"></p>
+  
+</body>
+<script>
+  const button= document.getElementById('1');
+  const mess = document.getElementById('msg');
+
+const addBg=()=>{
+mess.textContent= 'this is theb first click';
+}
+button.addEventListerner("click", addBg());
+
+  </script>
+</html>
